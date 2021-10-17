@@ -1,0 +1,80 @@
+.feed {
+  background-color: var(--body-color);
+}
+
+.subcol {
+  background-color: var(--body-color);
+  width: 300px;
+}
+
+.col {
+  background-color: var(--body-color);
+}
+.page-body .row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.page-body {
+  margin-top: 1em;
+}
+
+/* <div class="premium-card">
+<div class="premium-card__content">
+    <div class="premium-card__icon"></div>
+    <div>
+        <div class="premium-card__title"></div>
+        <div class="premium-card__description"></div>
+    </div>
+</div>
+<div class="premium-card__button">
+</div>
+</div> */
+
+.premium-card {
+  margin-top: 0.8em;
+  border-radius: 5px;
+  padding: 0.5em 0.7em;
+  background-color: var(--toolbar-color);
+  border: 1px solid var(--grey-border);
+  width: 100%;
+}
+
+.premium-card__content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 2em;
+  font-size: 0.85em;
+  color: var(--iron);
+  column-gap: 1em;
+}
+
+.premium-card__icon {
+  color: var(--orange);
+  font-size: 2em;
+}
+
+.premium-card__title {
+  font-weight: 600;
+}
+
+.premium-card__description {
+  font-size: 0.8em;
+}
+
+.premium-card__button {
+  margin-top: 0.7em;
+  cursor: pointer;
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: 700;
+  padding: 0.3em 0;
+  width: 100%;
+  background-color: var(--orange);
+  border-radius: 2em;
+}
+
+.premium-card__button:hover {
+  background-color: var(--orange-hover);
+}

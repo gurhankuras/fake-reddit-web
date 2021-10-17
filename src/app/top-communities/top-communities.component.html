@@ -1,0 +1,28 @@
+<div class="communities-card">
+  <div class="banner">
+    <h5 class="communities-card__title">Top Sports Communities</h5>
+  </div>
+  <ul class="ranking">
+    <li class="rank-item" *ngFor="let i of [1, 2, 3, 4, 5]">
+      <a href="" class="app-link">
+        <div class="rank-item-inner">
+          <span class="place">{{ i }}</span>
+          <i class="fas fa-angle-up"></i>
+          <div class="rank-item__subreddit-avatar"></div>
+          <h6 class="rank-item__subreddit-name">r/formula1</h6>
+        </div>
+      </a>
+    </li>
+  </ul>
+  <div style="display: flex; justify-content: center;">
+    <div class="communities-card__view-all-button">
+      View All
+    </div>
+  </div>
+  <div class="communities-card__other-categories">
+    <div class="communities-card__other-categories__chip">Top</div>
+    <div class="communities-card__other-categories__chip">Near You</div>
+    <div class="communities-card__other-categories__chip">Aww</div>
+    <div class="communities-card__other-categories__chip">News</div>
+  </div>
+</div>

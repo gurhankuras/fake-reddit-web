@@ -1,0 +1,32 @@
+<!-- <div class="dropdown flex-fill"> -->
+
+
+<div class="dropdown">
+
+  <div class="mini-nav d-flex align-items-center btn-group open"
+    aria-label="Start typing to filter your communities or use up and down to select." appOutlined
+    (click)="toggleDropdown()">
+    <!-- <button class="dropbtn">Dropdown</button> -->
+    <i class="fas fa-home icon--white"></i>
+    <span class="mini-nav__name">{{ routes[routeIndex]}}</span>
+    <!-- <div style="display: 'inline-block'; width:50%"></div> -->
+    <div class="flex-fill"></div>
+    <i class="fas fa-chevron-down fa-xs dropdown-icon"></i>
+    <!-- <div>
+      <div *ngFor='let r of routes; let idx = index' class="dropdown-option" (click)="changeRoute(idx)">{{ r }}</div>
+    </div> -->
+  </div>
+
+  <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul> -->
+
+
+</div>
+
+
+
+
+<!-- [ngClass]="{'dropdown-content--on': isOpen, 'dropdown-content': true}" -->

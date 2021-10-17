@@ -1,0 +1,30 @@
+<div class="app-actions">
+
+  <div *ngFor="let act of actions; let idx = index" class="app-action d-none d-sm-block">
+    <!-- <i class="far fa-arrow-alt-circle-up action__icon"></i> -->
+    <i [ngClass]="[act.iconStyle, act.class, 'app-action__icon']"></i>
+    <!-- <span class="tooltiptext">{{ act.name }}</span> -->
+  </div>
+  <div class="divider d-none d-sm-block"></div>
+
+  <div *ngFor="let act of actions2; let idx = index" class="app-action">
+    <i [ngClass]="[act.iconStyle, act.class, 'app-action__icon']"></i>
+  </div>
+  <!-- 
+  <div class="action">
+    <i class="fas fa-video action__icon"></i>
+  </div>
+  <div class="action">
+    <i class="fas fa-dot-circle action__icon"></i>
+  </div>
+  <div class="divider"></div>
+  <div class="action">
+    <i class="fas fa-plus action__icon"></i>
+  </div>
+  <div class="action">
+    <i class="far fa-bell action__icon"></i>
+  </div>
+  <div class="action">
+    <i class="far fa-comment action__icon"></i>
+  </div> -->
+</div>

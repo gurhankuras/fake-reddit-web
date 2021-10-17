@@ -9,7 +9,7 @@ interface Action {
 @Component({
   selector: 'app-header-actions',
   templateUrl: './header-actions.component.html',
-  styleUrls: ['./header-actions.component.css']
+  styleUrls: ['./header-actions.component.scss']
 })
 export class HeaderActionsComponent implements OnInit {
   actions: Action[] = [

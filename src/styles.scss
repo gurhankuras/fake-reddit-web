@@ -1,0 +1,133 @@
+/* You can add global styles to this file, and also import other style files */
+@use "colors";
+@use "common";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  background: colors.$body-color !important;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.unselectable {
+  @include common.unselectable;
+}
+
+.divider {
+  width: 0.2px;
+  margin: 5px 0;
+  background-color: grey;
+}
+
+.icon--white {
+  color: white;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+// scrollbar
+::-webkit-scrollbar {
+  width: 0.5em;
+
+  &#{-track} {
+    background: #1e2428;
+  }
+
+  &#{-thumb} {
+    background: #555;
+    border-radius: 15px;
+
+    &:hover {
+      background: rgb(129, 128, 128);
+    }
+  }
+}
+
+.search {
+  font-size: 12px;
+  min-width: 70px;
+  color: colors.$iron;
+  background-color: colors.$light-grey;
+  border: 0.1px solid colors.$grey-border;
+  outline: false;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 10px;
+
+  &:hover {
+    border: 0.1px solid colors.$iron;
+  }
+}
+
+.app-action {
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+
+  &:hover {
+    background-color: rgba(45, 45, 46, 1);
+  }
+
+  &#{__icon} {
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// .tooltip {
+//   position: relative;
+//   display: inline-block;
+//   border-bottom: 1px dotted rgba(0, 0, 0, 0.76);
+// }
+
+// .tooltip .tooltiptext {
+//   visibility: hidden;
+//   width: 120px;
+//   /* padding: 0 100px; */
+//   background-color: rgba(46, 45, 45, 0.678);
+//   color: #fff;
+//   text-align: center;
+//   border-radius: 6px;
+//   padding: 5px 0;
+//   position: absolute;
+//   z-index: 1;
+
+//   top: 150%;
+//   left: 50%;
+//   margin-left: -60px;
+// }
+
+// .tooltip .tooltiptext::after {
+//   content: "";
+//   position: absolute;
+//   bottom: 100%;
+//   left: 50%;
+//   margin-left: -5px;
+//   border-width: 5px;
+//   border-style: solid;
+//   border-color: transparent transparent rgba(46, 45, 45, 0.678) transparent;
+// }
+
+// .tooltip:hover .tooltiptext {
+//   visibility: visible;
+// }

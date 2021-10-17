@@ -1,9 +1,11 @@
+@use "../../../colors";
+
 .feed-post {
   color: grey;
   display: flex;
   cursor: pointer;
   column-gap: 15px;
-  background-color: var(--toolbar-color);
+  background-color: colors.$toolbar-color;
   padding: 0.5em;
   font-size: 12px;
   margin-top: 0.6em;
@@ -11,7 +13,7 @@
 }
 
 .feed-post:hover {
-  border: 0.1px solid var(--iron);
+  border: 0.1px solid colors.$iron;
 }
 
 .vote-section {
@@ -27,7 +29,7 @@
 }
 
 .post__content__title {
-  color: var(--iron);
+  color: colors.$iron;
   font-size: 1em;
   font-weight: 600;
 }
@@ -90,7 +92,7 @@
 }
 
 .post-action:hover {
-  background-color: var(--grey-soft-highlight);
+  background-color: colors.$grey-soft-highlight;
 }
 
 .post-action__icon {

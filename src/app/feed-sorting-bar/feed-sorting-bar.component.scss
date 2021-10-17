@@ -1,11 +1,13 @@
+@use "../../colors";
+
 .sorting-bar {
   margin-top: 1em;
-  background-color: var(--toolbar-color);
+  background-color: colors.$toolbar-color;
   display: flex;
   /* justify-content: center; */
   align-items: center;
   padding: 5px 10px;
-  border: 1px solid var(--grey-border);
+  border: 1px solid colors.$grey-border;
   border-radius: 4px;
   overflow: hidden;
   color: grey;
@@ -24,7 +26,7 @@
 
 .sorting-bar__criteria:hover,
 .change-display:hover {
-  background-color: var(--grey-soft-highlight);
+  background-color: colors.$grey-soft-highlight;
 }
 
 .criteria__icon {
@@ -37,7 +39,7 @@
 
 .criteria--selected {
   color: white;
-  background-color: var(--grey-hard-highlight);
+  background-color: colors.$grey-hard-highlight;
 }
 
 .show-more {
@@ -47,7 +49,7 @@
   border-radius: 50%;
 }
 .show-more:hover {
-  background-color: var(--grey-soft-highlight);
+  background-color: colors.$grey-soft-highlight;
 }
 
 .change-display {

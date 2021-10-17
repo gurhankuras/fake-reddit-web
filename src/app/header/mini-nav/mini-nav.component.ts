@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-mini-nav',
   templateUrl: './mini-nav.component.html',
-  styleUrls: ['./mini-nav.component.css']
+  styleUrls: ['./mini-nav.component.scss']
 })
 export class MiniNavComponent implements OnInit {
   routeIndex = 0;

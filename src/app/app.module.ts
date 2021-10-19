@@ -11,22 +11,39 @@ import { FeedSortingBarComponent } from './feed-sorting-bar/feed-sorting-bar.com
 import { FeedComponent } from './feed/feed.component';
 import { FeedPostComponent } from './feed/feed-post/feed-post.component';
 import { TopCommunitiesComponent } from './top-communities/top-communities.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './home/home.component';
+import { LeaderboardComponent } from './leaderboard/leaderboard.component';
+import { RouterModule } from '@angular/router';
+import { FeedSortingService } from './home/feed-sorting.service';
+import { FirstLetterCapitilazedPipe } from './pipes/FirstLetterCapitilazed.pipe';
+import { UserComponent } from './user/user.component';
+import { TimeAgoPipe } from './pipes/time-ago.pipe';
 
 @NgModule({
-  declarations: [					
+  declarations: [								
     AppComponent,
     HeaderComponent,
     HeaderActionsComponent,
     OutlinedDirective,
     MiniNavComponent,
-      CreatePostToolbarComponent,
-      FeedSortingBarComponent,
+    CreatePostToolbarComponent,
+    FeedSortingBarComponent,
     FeedComponent,
-      FeedPostComponent,
-      TopCommunitiesComponent
-   ],
+    FeedPostComponent,
+    TopCommunitiesComponent,
+      HomeComponent,
+    LeaderboardComponent,
+    UserComponent,
+
+
+    FirstLetterCapitilazedPipe,
+    TimeAgoPipe
+  ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
+    // RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

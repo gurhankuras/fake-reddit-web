@@ -11,7 +11,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   width: 100%;
   height: 75px;
   background-image: url("../../assets/banner-background.png");
@@ -48,7 +48,7 @@
     padding: 8px 0;
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     border-bottom: 1px solid colors.$grey-border;
   }
@@ -58,7 +58,7 @@
   font-size: 1em;
   font-weight: 600;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   color: colors.$iron;
   padding-left: 1em;
@@ -90,7 +90,7 @@
 
 .rank-item__subreddit {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -110,6 +110,8 @@
   border-radius: 1.5em;
   background-color: colors.$iron;
   width: 90%;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     background-color: rgba(216, 214, 214, 0.822);

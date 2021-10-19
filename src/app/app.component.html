@@ -1,27 +1,2 @@
 <app-header></app-header>
-<div class="page-body">
-    <div class="row parent">
-        <div class="col d-none d-sm-block"></div>
-        <div class="col-12 col-md-6 col-sm-7 feed">
-            <div>
-                <app-create-post-toolbar></app-create-post-toolbar>
-                <app-feed-sorting-bar></app-feed-sorting-bar>
-                <app-feed></app-feed>
-            </div>
-        </div>
-        <div class="d-none d-md-block subcol">
-            <app-top-communities></app-top-communities>
-            <div class="premium-card">
-                <div class="premium-card__content">
-                    <i class="fas fa-shield-alt premium-card__icon"></i>
-                    <div>
-                        <div class="premium-card__title">Reddit Premium</div>
-                        <div class="premium-card__description">The best Reddit experience, with monthly Coins</div>
-                    </div>
-                </div>
-                <div class="premium-card__button">Try Now</div>
-            </div>
-        </div>
-        <div class="col d-none d-sm-block"></div>
-    </div>
-</div>
+<router-outlet></router-outlet>

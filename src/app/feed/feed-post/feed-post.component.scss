@@ -19,7 +19,7 @@
 .vote-section {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -54,7 +54,7 @@
 
 .post__header {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 0.4em;
 }
@@ -102,4 +102,15 @@
 .post-action__text {
   font-weight: 700;
   font-size: 9px;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  &:hover {
+    text-decoration: underline;
+  }
+  margin-right: 0.3em;
 }

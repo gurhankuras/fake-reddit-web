@@ -3,7 +3,7 @@
     <div class="upvote">
       <i class="fas fa-arrow-up"></i>
     </div>
-    <div class="votes">2</div>
+    <div class="votes">{{post.netVotes}}</div>
     <div class="downvote">
       <i class="fas fa-arrow-down"></i>
     </div>
@@ -14,43 +14,30 @@
       <div class="subreddit">
         <div class="subreddit__avatar"></div>
         <span class="subreddit__name">
-          r/EnglishLearning
-          <span class="post__metadata">• Posted by u/tobiassw 3 hours ago</span>
+          r/{{post.subreddit.name}}
+          <span class="post__metadata">• Posted by </span>
+          <a [routerLink]="['/user', post.by]">
+            u/{{post.by}}
+          </a>
+          <a [routerLink]="['r', post.subreddit.name, 'comments', post.id, 'slugged-text']">
+            {{post.createdAt | timeago}}
+          </a>
         </span>
       </div>
 
     </div>
     <div class="post__content">
       <p class="post__content__title">
-        What's the difference between ideology and political orientation
+        {{post.title}}
       </p>
       <div class="post__content__text">
-        I noticed my natives in social media say ideology instead of political orientation and religion , so what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?I noticed my natives in social media say ideology instead of political orientation and religion , so
-        what's the
-        difference?
+        {{post.text}}
       </div>
     </div>
     <div class="post__action-bar">
       <div class="post-action">
         <i class="far fa-comment-alt post-action__icon"></i>
-        <span class="post-action__text">2 Comments</span>
+        <span class="post-action__text">{{post.commentCount}} Comments</span>
       </div>
       <div class="post-action">
         <i class="fas fa-gift post-action__icon"></i>

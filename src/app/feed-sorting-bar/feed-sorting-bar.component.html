@@ -1,25 +1,10 @@
 <div class="sorting-bar">
-  <div class="sorting-bar__criteria criteria--selected">
-    <i class="fas fa-rocket criteria__icon"></i>
-    <span class="criteria__text">Best</span>
-  </div>
 
-  <div class="sorting-bar__criteria ">
-    <i class="fas fa-fire-alt criteria__icon"></i>
-    <span class="criteria__text">Hot</span>
-  </div>
-
-
-  <div class="sorting-bar__criteria ">
-    <i class="fas fa-certificate criteria__icon"></i>
-    <span class="criteria__text">New</span>
-  </div>
-
-
-
-  <div class="sorting-bar__criteria ">
-    <i class="fas fa-chart-line criteria__icon"></i>
-    <span class="criteria__text">Rising</span>
+  <div *ngFor="let cr of sortingOptions; let idx = index" class="sorting-bar__criteria"
+    (click)=" changeSortingCriteria(cr.name)"
+    [ngClass]="{'criteria--selected': currentCriteria.name === sortingOptions[idx].name}">
+    <i class="criteria__icon" [ngClass]="[cr.icon]"></i>
+    <span class="criteria__text">{{cr.name | firstCapitilazed}}</span>
   </div>
 
   <div class="show-more">
